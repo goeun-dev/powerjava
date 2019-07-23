@@ -13,7 +13,9 @@ public class ConvertTemperature {
 		System.out.print("화씨 온도를 입력하세요: ");
 		F = input.nextDouble();
 		
-		C = (F-32)*5/9;
+		// C = 5/9*(F-32); 의 결과가 항상 0인 이유
+		// 5/9의 결과는 0이기 때문에 두 피연산자 중 어느 한쪽을 반드시 float나 double로 해야만 실수 형태의 결과를 얻을 수 있다.
+		C = 5/(double)9*(F-32);
 		
 		System.out.println("화씨 온도: "+F+", 섭씨 온도: "+C);
 
