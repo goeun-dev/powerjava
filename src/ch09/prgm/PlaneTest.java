@@ -16,7 +16,7 @@ public class PlaneTest {
 		System.out.println(p2.getMax());
 
 		int p = Plane.getPlanes();
-		System.out.println("积己等 厚青扁 俺荐: " + p);
+		System.out.println("积己等 厚青扁 俺荐 = " + p);
 	}
 
 }
