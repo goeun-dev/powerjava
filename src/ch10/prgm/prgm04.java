@@ -13,7 +13,7 @@ public class prgm04 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("16진수 문자열을 입력하시오: ");
 		hexa = sc.next();
-System.out.print(hexa+"에 대한 이진수: ");
+		System.out.print(hexa + "에 대한 이진수: ");
 		for (int i = 0; i < hexa.length(); i++) {
 			switch (hexa.charAt(i)) {
 			case '0':
